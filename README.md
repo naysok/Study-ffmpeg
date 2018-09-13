@@ -7,7 +7,9 @@
 ffmpeg -framerate 15 -start_number 361 -i %05d.png -r 30 -an -vcodec libx264 -pix_fmt yuv420p out1.mp4
 ```
 
+
 ---  
+
 
 ### gif  
 
@@ -27,3 +29,14 @@ ffmpeg -f image2 -r 6 -i 171028-resize-%03d.jpg  out-resize-6.gif
 ffmpeg -f image2 -r 4 -i 171028-%03d.jpg  out-4.gif
 ffmpeg -f image2 -r 4 -i 171028-resize-%03d.jpg  out-resize-4.gif
 ```
+
+
+---  
+
+
+### Ref.  
+
+[https://ffmpeg.org/ffmpeg.html](https://ffmpeg.org/ffmpeg.html)  
+
+
+
