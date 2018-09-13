@@ -9,7 +9,7 @@ ffmpeg -framerate 15 -start_number 361 -i %05d.png -r 30 -an -vcodec libx264 -pi
 
 ---  
 
-### GIF  
+### gif  
 
 ```bash
 // 早すぎ
