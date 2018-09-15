@@ -1,7 +1,25 @@
 # README.md  
 
 
-### mp4  
+### index  
+
+- video → images  
+- images → mp4   
+- images → gif  
+
+
+---  
+
+---  
+
+
+### video → images  
+
+
+---  
+
+
+### images → mp4  
 
 ```bash
 ffmpeg -framerate 15 -start_number 361 -i %05d.png -r 30 -an -vcodec libx264 -pix_fmt yuv420p out1.mp4
@@ -11,7 +29,7 @@ ffmpeg -framerate 15 -start_number 361 -i %05d.png -r 30 -an -vcodec libx264 -pi
 ---  
 
 
-### gif  
+### images → gif  
 
 ```bash
 // 早すぎ
