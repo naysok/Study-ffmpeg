@@ -1,1 +1,7 @@
 .DS_Store
+
+*.mp4
+*/*.mp4
+
+*.mov
+*/*.mov
