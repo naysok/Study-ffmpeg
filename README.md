@@ -8,6 +8,9 @@
 - images → gif  
 - mov → mp4  
 - video-1 + video-2 → video  
+- mp4 → mp3  
+- mp3 + mp4  
+
 
 
 ---  
@@ -142,6 +145,25 @@ file one.mp4
 ffmpegでMP4ファイルを結合する(Qiita)
 [https://qiita.com/niusounds/items/c386e02ab8e67030bdc0](https://qiita.com/niusounds/items/c386e02ab8e67030bdc0)
 
+
+---  
+
+---  
+
+
+### mp4 → mp3  
+
+```bash
+ffmpeg -y -i input.mp4 -ab 128k output.mp3
+
+```
+
+
+### Ref  
+[http://d.hatena.ne.jp/katz_24/20160324/1458784287](http://d.hatena.ne.jp/katz_24/20160324/1458784287)   
+
+
+---  
 
 ---  
 
