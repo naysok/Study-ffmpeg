@@ -159,7 +159,7 @@ ffmpeg -y -i input.mp4 -ab 128k output.mp3
 ```
 
 
-### Ref  
+##### Ref  
 [http://d.hatena.ne.jp/katz_24/20160324/1458784287](http://d.hatena.ne.jp/katz_24/20160324/1458784287)   
 
 
@@ -167,3 +167,16 @@ ffmpeg -y -i input.mp4 -ab 128k output.mp3
 
 ---  
 
+
+### mp3 + mp4  
+
+```bash
+ffmpeg -i Igarashi-Morning-Edge.mp4  -i Igarashi-Morning.mp3 -c:v copy -c:a aac -strict experimental -map 0:v -map 1:a output.mp4
+```
+
+##### Ref.  
+- FFmpegで動画編集をするガイド  
+[http://moriyoshi.hatenablog.com/entry/2015/12/17/224127](http://moriyoshi.hatenablog.com/entry/2015/12/17/224127)  
+
+- [ffmpeg]音声なし動画と音声を結合する  
+[https://kobiwa.net/blog/2016/08/11/ffmpeg%E9%9F%B3%E5%A3%B0%E3%81%AA%E3%81%97%E5%8B%95%E7%94%BB%E3%81%A8%E9%9F%B3%E5%A3%B0%E3%82%92%E7%B5%90%E5%90%88%E3%81%99%E3%82%8B/](https://kobiwa.net/blog/2016/08/11/ffmpeg%E9%9F%B3%E5%A3%B0%E3%81%AA%E3%81%97%E5%8B%95%E7%94%BB%E3%81%A8%E9%9F%B3%E5%A3%B0%E3%82%92%E7%B5%90%E5%90%88%E3%81%99%E3%82%8B/)  
