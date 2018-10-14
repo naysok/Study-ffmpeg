@@ -3,6 +3,7 @@
 
 ### Index  
 
+- print info
 - video → images  
 - images → mp4   
 - images → gif  
@@ -11,6 +12,24 @@
 - mp4 → mp3  
 - mp3 + mp4  
 
+
+
+---  
+
+---  
+
+
+### print info  
+
+mp4, mp3 どちらでも出る  
+
+```bash
+ffmpeg -i File_Name
+
+### ex.
+# Duration: 00:00:07.60, start: 0.000000, bitrate: 1102 kb/s
+# [SAR 1:1 DAR 1:1], 1098 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+```
 
 
 ---  
