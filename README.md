@@ -200,6 +200,11 @@ ffmpeg で動画ファイルから音声だけ抜き出す（katz's adversaria�
 
 ### mp3 + mp4  
 
+音のみの素材と、映像を合わせる  
+長い方の長さに合わせられる（多分）  
+
+音声の方が長い場合は、映像の最終フレームが続く  
+
 ```bash
 ffmpeg -i Igarashi-Morning-Edge.mp4  -i Igarashi-Morning.mp3 -c:v copy -c:a aac -strict experimental -map 0:v -map 1:a output.mp4
 ```
