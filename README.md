@@ -122,7 +122,7 @@ ffmpeg -f image2 -r 4 -i 171028-resize-%03d.jpg  out-resize-4.gif
 
 
 ##### Ref.  
-
+ffmpeg Documentation  
 [https://ffmpeg.org/ffmpeg.html](https://ffmpeg.org/ffmpeg.html)  
 
 
@@ -170,7 +170,7 @@ file one.mp4
 
 ##### Ref.  
 
-ffmpegでMP4ファイルを結合する(Qiita)
+ffmpegでMP4ファイルを結合する(Qiita)  
 [https://qiita.com/niusounds/items/c386e02ab8e67030bdc0](https://qiita.com/niusounds/items/c386e02ab8e67030bdc0)
 
 
@@ -188,6 +188,8 @@ ffmpeg -y -i input.mp4 -ab 128k output.mp3
 
 
 ##### Ref  
+
+ffmpeg で動画ファイルから音声だけ抜き出す（katz's adversaria）  
 [http://d.hatena.ne.jp/katz_24/20160324/1458784287](http://d.hatena.ne.jp/katz_24/20160324/1458784287)   
 
 
@@ -203,8 +205,9 @@ ffmpeg -i Igarashi-Morning-Edge.mp4  -i Igarashi-Morning.mp3 -c:v copy -c:a aac 
 ```
 
 ##### Ref.  
-- FFmpegで動画編集をするガイド  
+
+FFmpegで動画編集をするガイド  
 [http://moriyoshi.hatenablog.com/entry/2015/12/17/224127](http://moriyoshi.hatenablog.com/entry/2015/12/17/224127)  
 
-- [ffmpeg]音声なし動画と音声を結合する  
+[ffmpeg]音声なし動画と音声を結合する  
 [https://kobiwa.net/blog/2016/08/11/ffmpeg%E9%9F%B3%E5%A3%B0%E3%81%AA%E3%81%97%E5%8B%95%E7%94%BB%E3%81%A8%E9%9F%B3%E5%A3%B0%E3%82%92%E7%B5%90%E5%90%88%E3%81%99%E3%82%8B/](https://kobiwa.net/blog/2016/08/11/ffmpeg%E9%9F%B3%E5%A3%B0%E3%81%AA%E3%81%97%E5%8B%95%E7%94%BB%E3%81%A8%E9%9F%B3%E5%A3%B0%E3%82%92%E7%B5%90%E5%90%88%E3%81%99%E3%82%8B/)  
