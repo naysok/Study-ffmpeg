@@ -1,6 +1,15 @@
 # Study-ffmpeg    
 
 
+オプションを色々つけて ffpmeg をコマンドライン実行しなくても、  
+ffmpeg.sh とかに書いて  
+```bash
+bash ffmpeg.sh
+```
+でも実行できる  
+
+
+
 ### Index  
 
 - print info
