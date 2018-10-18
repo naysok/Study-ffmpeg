@@ -3,5 +3,8 @@
 *.mp4
 */*.mp4
 
+*.wav
+*/*.wav
+
 *.mov
 */*.mov
