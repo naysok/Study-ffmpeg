@@ -20,6 +20,7 @@ bash ffmpeg.sh
 - video-1 + video-2 → video  
 - mp4 → mp3  
 - mp3 + mp4  
+- mp3 → wav  
 
 
 
@@ -216,3 +217,23 @@ FFmpegで動画編集をするガイド
 
 [ffmpeg]音声なし動画と音声を結合する  
 [https://kobiwa.net/blog/2016/08/11/ffmpeg%E9%9F%B3%E5%A3%B0%E3%81%AA%E3%81%97%E5%8B%95%E7%94%BB%E3%81%A8%E9%9F%B3%E5%A3%B0%E3%82%92%E7%B5%90%E5%90%88%E3%81%99%E3%82%8B/](https://kobiwa.net/blog/2016/08/11/ffmpeg%E9%9F%B3%E5%A3%B0%E3%81%AA%E3%81%97%E5%8B%95%E7%94%BB%E3%81%A8%E9%9F%B3%E5%A3%B0%E3%82%92%E7%B5%90%E5%90%88%E3%81%99%E3%82%8B/)  
+
+
+---  
+
+---  
+
+
+### mp3 → wav  
+
+Python で音をいじるのに便利そうなライブラリを探した。  
+.wav 形式を扱える wave ライブラリがあるので、mp3 の音の素材を、wav に変換する  
+
+```bash
+ffmpeg -i input.mp3 -vn -ac 2 -ar 44100 -acodec pcm_s16le -f wav output.wav
+```
+
+##### Ref  
+
+[ffmpeg] 音声形式の変換方法まとめ（Qitia）  
+[https://qiita.com/suzutsuki0220/items/43c87488b4684d3d15f6](https://qiita.com/suzutsuki0220/items/43c87488b4684d3d15f6)  
