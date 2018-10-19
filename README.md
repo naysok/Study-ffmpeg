@@ -21,6 +21,7 @@ bash ffmpeg.sh
 - mp4 → mp3  
 - mp3 + mp4  
 - mp3 → wav  
+- mp4(long) → mp4(short) - divide  
 
 
 
@@ -237,3 +238,21 @@ ffmpeg -i input.mp3 -vn -ac 2 -ar 44100 -acodec pcm_s16le -f wav output.wav
 
 [ffmpeg] 音声形式の変換方法まとめ（Qitia）  
 [https://qiita.com/suzutsuki0220/items/43c87488b4684d3d15f6](https://qiita.com/suzutsuki0220/items/43c87488b4684d3d15f6)  
+
+
+---  
+
+---  
+
+### mp4(long) → mp4(short) - divide  
+
+長い動画のとりあえず冒頭だけ使いたい時  
+
+```bash
+ffmpeg -ss [開始地点(秒)] -i [入力する動画パス] -t [切り出す秒数] [出力する動画パス]
+```
+
+##### Ref.  
+
+FFmpegで素早く正確に動画をカットする自分的ベストプラクティス(Qitia)  
+[https://qiita.com/kitar/items/d293e3962ade087fd850](https://qiita.com/kitar/items/d293e3962ade087fd850)  
