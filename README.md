@@ -22,6 +22,7 @@ bash ffmpeg.sh
 - mp3 + mp4  
 - mp3 → wav  
 - mp4(long) → mp4(short) - divide  
+- Reverse  
 
 
 
@@ -264,3 +265,24 @@ Duration: 00:00:30.02, start: 0.023021, bitrate: 268 kb/s
 
 FFmpegで素早く正確に動画をカットする自分的ベストプラクティス(Qitia)  
 [https://qiita.com/kitar/items/d293e3962ade087fd850](https://qiita.com/kitar/items/d293e3962ade087fd850)  
+
+
+---  
+
+---  
+
+
+### Reverse  
+
+逆再生  
+mp3, mp4 どちらでもできる  
+
+```bash
+ffmpeg -i input.mp4 output.mp4 -filter_complex "reverse;areverse"
+```
+
+
+##### Ref  
+
+FFmpegでよく使う例、コーデックをまとめてみた（Qiita）  
+[https://qiita.com/SquidSky/items/960bbd0f348ad8dca544](https://qiita.com/SquidSky/items/960bbd0f348ad8dca544)  
