@@ -250,7 +250,15 @@ ffmpeg -i input.mp3 -vn -ac 2 -ar 44100 -acodec pcm_s16le -f wav output.wav
 
 ```bash
 ffmpeg -ss [開始地点(秒)] -i [入力する動画パス] -t [切り出す秒数] [出力する動画パス]
+
 ```
+
+cf.  
+-t 30 の、30秒で切り出す。  
+その結果を ffmpeg -i File_Name で調べる  
+Duration: 00:00:30.02, start: 0.023021, bitrate: 268 kb/s  
+ほんの少しずれてる  
+
 
 ##### Ref.  
 
