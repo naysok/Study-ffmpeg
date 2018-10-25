@@ -263,7 +263,7 @@ Duration: 00:00:30.02, start: 0.023021, bitrate: 268 kb/s
 
 ##### Ref.  
 
-FFmpegで素早く正確に動画をカットする自分的ベストプラクティス(Qitia)  
+FFmpegで素早く正確に動画をカットする自分的ベストプラクティス(Qmkdiritia)  
 [https://qiita.com/kitar/items/d293e3962ade087fd850](https://qiita.com/kitar/items/d293e3962ade087fd850)  
 
 
