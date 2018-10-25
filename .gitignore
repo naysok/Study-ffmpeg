@@ -11,3 +11,5 @@
 
 *.mov
 */*.mov
+
+/Result/
