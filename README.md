@@ -21,6 +21,7 @@ bash ffmpeg.sh
 - mp4 → mp3  
 - mp3 + mp4  
 - mp3 → wav  
+- git → mp4  
 - mp4(long) → mp4(short) - divide  
 - Reverse  
 
@@ -244,6 +245,28 @@ ffmpeg -i input.mp3 -vn -ac 2 -ar 44100 -acodec pcm_s16le -f wav output.wav
 ---  
 
 ---  
+
+
+### gif → mp4  
+
+あまりやる機会ないけど、gif から mp4  
+
+
+```bash  
+ffmpeg -i input.gif  -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" output.mp4
+
+```
+
+##### Ref.  
+
+FFmpegでgifアニメをmp4に変換する(Qiita)  
+[https://qiita.com/razokulover/items/fe45833c997b338c638a](https://qiita.com/razokulover/items/fe45833c997b338c638a)  
+
+
+---  
+
+---  
+
 
 ### mp4(long) → mp4(short) - divide  
 
