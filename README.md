@@ -167,7 +167,13 @@ ffmpeg -f concat -i mylist.txt -c copy output.mp4
 ```
 
 mylist.txt
-> file one.mp4  
+> file first.mp4  
+file second.mp4  
+file third.mp4  
+
+
+同じファイルをつなぐ時はこういう感じ↓  
+>file one.mp4  
 file one.mp4  
 file one.mp4  
 
