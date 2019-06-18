@@ -1,16 +1,10 @@
 .DS_Store
 
 *.mp4
-*/*.mp4
-
 *.mp3
-*/*.mp3
-
 *.wav
-*/*.wav
-
 *.mov
-*/*.mov
+
 
 /Result/
-
+/sliced_images/
