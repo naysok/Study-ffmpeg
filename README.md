@@ -315,3 +315,18 @@ ffmpeg -i input.mp4 output.mp4 -filter_complex "reverse;areverse"
 
 FFmpegでよく使う例、コーデックをまとめてみた（Qiita）  
 [https://qiita.com/SquidSky/items/960bbd0f348ad8dca544](https://qiita.com/SquidSky/items/960bbd0f348ad8dca544)  
+
+
+---  
+
+---  
+
+### Errors   
+
+
+##### 動画操作ソフト ffmpeg のエラー "width not divisible by 2" への対処(Qiita)  
+
+[https://qiita.com/genchi-jin/items/90078b6ec751fdacbc9e](https://qiita.com/genchi-jin/items/90078b6ec751fdacbc9e)  
+
+
+---  
